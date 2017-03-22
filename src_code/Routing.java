@@ -9,6 +9,10 @@ public class Routing {
     public ArrayList<Waypoint> calculateRoute(Waypoint start, Waypoint end, ArrayList<Waypoint> nodes, DBPreferences userPref){
         return nodes;
     }
+    
+    public void getFromGIS (ArrayList<Waypoint> gisList) {
+        listOfNodes = gisList;
+    }
 
     public RouteObj getCache() {
         RouteObj cachedRoute = new RouteObj();
